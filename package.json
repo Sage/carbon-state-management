@@ -1,0 +1,29 @@
+{
+  "name": "carbon-state-management",
+  "version": "1.0.0",
+  "description": "Carbon - State Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sage/carbon-state-management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sage/carbon-state-management/issues"
+  },
+  "homepage": "https://github.com/Sage/carbon-state-management#readme",
+  "dependencies": {
+    "events": "^1.1.1",
+    "flux": "^3.1.1",
+    "lodash": "^4.17.11",
+    "react": "^16.8.2"
+  },
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "jest": "^24.1.0"
+  }
+}
