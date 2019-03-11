@@ -1,10 +1,12 @@
 {
   "name": "carbon-state-management",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Carbon - State Management",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config=./jest.conf.json"
+    "test": "jest --config=./jest.conf.json",
+    "prepublishOnly": "npm install && npm run babel",
+    "babel": "cross-env NODE_ENV=production babel --stage 0 ./src --config-file ./babel.config.js --out-dir ./lib --ignore '**/*/__spec__.js','**/*.spec.js','**/__definition__.js' --quiet"
   },
   "repository": {
     "type": "git",
@@ -16,19 +18,26 @@
     "url": "https://github.com/Sage/carbon-state-management/issues"
   },
   "homepage": "https://github.com/Sage/carbon-state-management#readme",
-  "dependencies": {
-    "events": "^1.1.1",
+  "peerDependencies": {
     "flux": "^3.1.1",
     "lodash": "^4.17.11",
-    "react": "^16.8.2"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.4"
+  },
+  "dependencies": {
+    "events": "^1.1.1"
   },
   "devDependencies": {
     "carbon-factory": "^7.1.0",
     "carbon-react": "^6.2.0",
     "core-js": "^2.6.5",
+    "cross-env": "^5.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
+    "flux": "^3.1.1",
     "jest": "^24.1.0",
+    "lodash": "^4.17.11",
+    "react": "^16.8.2",
     "react-dom": "^16.8.4"
   }
 }

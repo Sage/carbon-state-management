@@ -1,0 +1,19 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+node_js:
+  - 8.11.3
+install:
+  - npm install -g npm@6.1.0
+  - npm install
+script:
+  - npm run test
+deploy:
+  - provider: npm
+    email: sageoneplatform@sage.com
+    api_key:
+      secure: DSo5cCtO6pXMSN6GgNzbYAEdZ50izoqzpjSABZgK8mfN6f8J0gZk91VXfEpZ1wcAxXkY3RoYjcYQ3zP2bGSy7Y3+KABX3RVdG1q9Ry2DdY30y1/yXFPaIvvBrG4mE7/hbg+5+9MpSulaxyKWPvg9jCbnBHHX+K8s89bndasQv9g13d3tlyg3PO7JHaeKw6Jk0L7HFhrb2WDFOZPT7jKpfhaHSGLg2tza5f+XxJq9etdE0l2AP64nhqbBkvMferVSYQ2Oypfc7xAzhPjt2BifuqDbgNeKGsmifXiOGwKxDFCiRFD0UiDC0GvNtI3qH1QIGjBcZ/FbamJgw6VrHZFPLH+IJ/OPfMqPft2klnRcV5Z8JUB4g1RSD/h5su6z5X1M7sLRL1NWw/Jk6Zg1Pqu+AzoGcQbIxAe0aofrL/MdaandIk2o8JR9ECoihs2w6E550NN1CZWvxpuixMccHV7Xcy2PSgU5ip6YXzvla6OtuL6o2PPkCWYNwWuTreCx9ExxCH594Uzn6EDPbgaZUPfsPWRk/jGssgAgrGex54l99xBSwfnikCvWj7Nf9sebkQXbR/0L1wFleJz0EGXyuhD/Aktb0O2dAtsxbJmhbhVsAVsxs36YPtywCtyefYIc2rulT/374vsTLm0ILpFDG3j9rHVmVMByKMFuiRAgLx7ae5s=
+    on:
+      tags: true
+      condition: "$TRAVIS_TAG =~ ^((v[0-9]+.[0-9]+.[0-9]+)(-rc[0-9]+)?)$"
