@@ -13,5 +13,3 @@ install:
 
 script:
   - npm run test
-
-before_deploy: if [ "$TRAVIS_BRANCH" == "release" ]; then npm run build; fi
