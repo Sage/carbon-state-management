@@ -10,6 +10,6 @@ __This library is not ready for use__.
 
 ### Basic Usage
 
-```js
+```shell
 npm install --save carbon-state-management
 ```
