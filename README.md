@@ -12,7 +12,11 @@ __This library is not ready for use__.
 
 ### Basic Usage
 
+<<<<<<< HEAD
 ```bash
+=======
+```shell
+>>>>>>> 7f0bf46238da1bfee834fc2a4a87a9796cc7cf98
 npm install --save carbon-state-management
 ```
 
