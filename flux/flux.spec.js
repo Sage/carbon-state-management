@@ -1,8 +1,8 @@
 import React from 'react';
 import Flux from 'flux';
 import { connect, Dispatcher } from './flux';
-import Textbox from './../../components/textbox';
-import Store from './store';
+import Textbox from 'carbon-react/lib/components/textbox';
+import Store from './store/store';
 
 class BaseStore1 extends Store {}
 

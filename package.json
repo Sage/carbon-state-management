@@ -4,7 +4,7 @@
   "description": "Carbon - State Management",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --config=./jest.conf.json"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,12 @@
     "react": "^16.8.2"
   },
   "devDependencies": {
+    "carbon-factory": "^7.1.0",
+    "carbon-react": "^6.2.0",
+    "core-js": "^2.6.5",
     "enzyme": "^3.9.0",
-    "jest": "^24.1.0"
+    "enzyme-adapter-react-16": "^1.10.0",
+    "jest": "^24.1.0",
+    "react-dom": "^16.8.4"
   }
 }
