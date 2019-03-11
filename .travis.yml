@@ -13,7 +13,7 @@ deploy:
   - provider: npm
     email: sageoneplatform@sage.com
     api_key:
-      secure: jV4duI6Wa6HIawPIv/t/wSJJkkOJoPNgBg8P7InjNN9xaUeBYGWaVHbfuZQiCnf/DzQFjEjklg43cCzj7Hc7oirTfaLxuGBKkmNf4jKcnrwptzXRJCsSw8snMgtrkmiDYs36YlrxoBc9W6cXwMBqlevEuaDxvn4Hy/tILjCtIcYu7MmP0eDTCs7BM95cfikQJYbPSOX4h98n/tFFphmKTFbEaSNXO/+INp5n6u0lTwBDSzjSh5VnvW+CM+QsnbzIkxhZpPqInKeZaaRUeVcDNSrGRfr1CHCNOiZomgtS840jR7cSYZZllPTgNDWbxXlzVeRJy8ylXLbmuE/3FG7CLQrwoiGQ0at/SiaqdxbD8Czx53TPQ9G9opCh85pTb2XZAf70cQs3twbV2UESlBYxuZrpBIyVhtq60AAAWQ341pbBRfQwBB6dwP81MnIjHiK/RWGuTzYkpTmJCg5VXkptIy2HrxsSDpVbz11OIPRRRcB2oD+T6gWaadrXqan+yPZR6ajTVFfJhQjis4bskRtSCy6a2To41d3c3d2EMVeA0MmrQhH3FeOOWgVITr6fwerTfTYw+DdhrlEmRBn/5hxSAcmIgC0+hPlU0MTdQf3QcC4aPJ2IqRzJRiRbX0BSzIpab4w/Y9yBY2R++00Rao2GkH0t4rD/Wf2D5eUv3q4qkGA=
+      secure: "x/qTKecxkGNNqDR/J2xCdzb1HccKSNZyFOB2sbAzMA3UfxiB0s5unDZ3MT6mRnfbm93Rj4CfPkQ5KRiIqbaWOKpthLGPCKrgV8QQPZAXbkxNDyse2ssBj8m1wNODTx4VXQ7z16TYR1cGIcdkNgjzR+snUEFuxl6YcPZsgcL2+gWL+f/oPeJ2J9ruLgMi7OonuTa1rwxz5tr2ypyzaURo+4VZBq5kOIWYAyW5ICTNXsFcgeFSixCXIqbZLotagiHlCHFqeXFKf1qY3THrFs7IA+VtoRAcZ04QqcwgU03L46Bvsv54PWdXqQ+EbSVL7H9fn2Xa5ShAJBSMrhK4hozJhAJZKLTt9OaRf1qXnc3SpusoxxaQVeGdL8Qo4vNwyQMor73wDsffWx+anV8Tw0wuBzlNjNi2JV7PJP/MqS0Ph3R/kjMl4+9OWmU9Mh1t123tae/r++ghZc/ZE+O7e+21Gg2atzhPGMCyDfa1+b2gXpfAXipgv5lJU1drx5gIrXd94SmKYy1s8XVMSSpD0ybRgCZIXPzn69wB1dPe2ELOgJB2IhSm63DdT7OD7awyedmvz0w5wnAMA8gLlEFlN/wWM5KNQV39aZk8tutobYFRt7pnyFvy88fH6FOf8C4R1w0eUbocFHnXEcTCe8gRnuzoq7RSnf3V6BrDwwXR2YyBoZI="
     on:
       tags: true
       condition: "$TRAVIS_TAG =~ ^((v[0-9]+.[0-9]+.[0-9]+)(-rc[0-9]+)?)$"
