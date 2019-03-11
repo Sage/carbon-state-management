@@ -12,7 +12,6 @@ __This library is not ready for use__.
 
 ### Basic Usage
 
-<<<<<<< HEAD
 ```bash
 =======
 ```shell
