@@ -1,16 +1,15 @@
 language: node_js
 cache:
   directories:
-  - node_modules
+    - node_modules
 node_js:
-- 8.11.3
+  - 8.11.3
 install:
-- npm install -g npm@6.1.0
-- npm install
+  - npm install -g npm@6.1.0
+  - npm install
 script:
-- npm run test
+  - npm run test
 deploy:
-  matrix:
   - provider: npm
     email: sageoneplatform@sage.com
     api_key:
