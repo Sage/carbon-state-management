@@ -1,6 +1,6 @@
 import Flux from 'flux';
 import { assign } from 'lodash';
-import Logger from '../logger';
+import Logger from 'carbon-react/lib/utils/logger';
 
 export const Dispatcher = new Flux.Dispatcher();
 
