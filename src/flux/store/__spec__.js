@@ -1,6 +1,6 @@
 import Store from './store';
 import Flux from 'flux';
-import Logger from './../../logger';
+import Logger from 'carbon-react/lib/utils/logger';
 import { Dispatcher } from './../../flux';
 import { EventEmitter } from 'events';
 
