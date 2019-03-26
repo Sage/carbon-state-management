@@ -1,6 +1,6 @@
 {
   "name": "carbon-state-management",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Carbon - State Management",
   "main": "index.js",
   "scripts": {
