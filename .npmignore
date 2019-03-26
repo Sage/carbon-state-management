@@ -1,0 +1,12 @@
+*.swo
+*.swp
+.DS_Store
+.browser-preferences/
+.git
+.github
+.idea
+.travis.yml
+.vscode
+node_modules
+src
+yarn.lock
