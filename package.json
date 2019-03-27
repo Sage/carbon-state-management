@@ -1,12 +1,15 @@
 {
   "name": "carbon-state-management",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Carbon - State Management",
   "main": "index.js",
   "scripts": {
     "test": "jest --config=./jest.conf.json",
-    "prepublishOnly": "npm install && npm run babel",
-    "babel": "cross-env NODE_ENV=production babel --stage 0 ./src --config-file ./babel.config.js --out-dir ./lib --ignore '**/*/__spec__.js','**/*.spec.js','**/__definition__.js' --quiet"
+    "prepublishOnly": "npm install && npm run precompile",
+    "precompile": "npm run clean-lib && npm run copy-files && npm run babel",
+    "babel": "cross-env NODE_ENV=production babel --stage 0 ./src --config-file ./babel.config.js --out-dir ./lib --ignore '**/*/__spec__.js','**/*.spec.js','**/__definition__.js' --quiet",
+    "copy-files": "cpx \"src/**/!(*.js|*.md|*.snap)\" lib",
+    "clean-lib": "rimraf ./lib"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
     "carbon-factory": "^7.1.0",
     "carbon-react": "^6.2.0",
     "core-js": "^2.6.5",
+    "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
@@ -38,6 +42,7 @@
     "jest": "^24.1.0",
     "lodash": "^4.17.11",
     "react": "^16.8.2",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "rimraf": "^2.6.3"
   }
 }
