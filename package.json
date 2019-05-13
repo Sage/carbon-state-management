@@ -27,7 +27,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^7.0.0",
-    "redux": "^4.0.0"
+    "redux": "^3.7.2"
   },
   "dependencies": {
     "events": "^1.1.1"
@@ -46,7 +46,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.4",
     "react-redux": "^7.0.3",
-    "redux": "^4.0.1",
+    "redux": "^3.7.2",
     "rimraf": "^2.6.3"
   }
 }

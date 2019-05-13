@@ -1,7 +1,6 @@
 import Flux from 'flux';
 import { assign } from 'lodash';
 import { connect as reduxConnect } from 'react-redux'
-import Logger from '../logger';
 import reducerRegistry from './reducer-registry';
 
 export const Dispatcher = {

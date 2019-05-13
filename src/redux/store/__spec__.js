@@ -1,6 +1,5 @@
 import Store from './store';
 import Flux from 'flux';
-import Logger from './../../logger';
 import { Dispatcher } from './../../flux';
 import { EventEmitter } from 'events';
 
