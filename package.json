@@ -28,12 +28,13 @@
     "react-dom": "^16.8.4"
   },
   "dependencies": {
-    "events": "^1.1.1"
+    "events": "^1.1.1",
+    "regenerator-runtime": "^0.13.2"
   },
   "devDependencies": {
-    "carbon-factory": "^7.1.0",
+    "carbon-factory": "git://github.com/sage/carbon-factory#FE-1646-core-js-3",
     "carbon-react": "^6.2.0",
-    "core-js": "^2.6.5",
+    "core-js": "^3.1.4",
     "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
     "enzyme": "^3.9.0",
