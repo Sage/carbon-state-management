@@ -32,8 +32,6 @@
     "regenerator-runtime": "^0.13.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
     "carbon-factory": "git://github.com/sage/carbon-factory#FE-1646-core-js-3",
     "carbon-react": "^6.2.0",
     "core-js": "^3.1.4",
