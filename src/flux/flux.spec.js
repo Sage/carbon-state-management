@@ -1,7 +1,6 @@
 import React from 'react';
 import Flux from 'flux';
 import { connect, Dispatcher } from './flux';
-import Textbox from 'carbon-react/lib/components/textbox';
 import Store from './store/store';
 
 class BaseStore1 extends Store {}
@@ -31,7 +30,7 @@ class View extends React.Component {
     let value = this.state.BaseStore1.get('text');
 
     return(
-      <Textbox name="Test" value={ value } />
+      <textbox name="Test" value={ value } />
     );
   }
 }
