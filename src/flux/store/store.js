@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import { Dispatcher } from '..';
+import { Dispatcher } from '../flux';
 
 /**
  * A constant used for the change event within this module.
