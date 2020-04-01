@@ -36,7 +36,7 @@
     "carbon-react": "^6.2.0",
     "core-js": "^3.1.4",
     "cpx": "^1.5.0",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "flux": "^3.1.1",
