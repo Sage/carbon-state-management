@@ -32,7 +32,7 @@
     "regenerator-runtime": "^0.13.2"
   },
   "devDependencies": {
-    "carbon-factory": "^8.0.0",
+    "carbon-factory": "^11.0.1",
     "carbon-react": "^6.2.0",
     "core-js": "^3.1.4",
     "cpx": "^1.5.0",
